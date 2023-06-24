@@ -11,7 +11,7 @@ public class Question {
 				spaceCount++;
 			}
 		}
-		index = trueLength + spaceCount * 2;
+		index = trueLength + spaceCount * 2; // 2 multiplier for difference in length of ' ' and '%20'
 		if (trueLength < str.length) str[trueLength] = '\0';
 		for (i = trueLength - 1; i >= 0; i--) {
 			if (str[i] == ' ') {
